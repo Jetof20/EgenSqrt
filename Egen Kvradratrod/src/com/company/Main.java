@@ -18,7 +18,7 @@ public class Main {
             System.out.printf("Iteration: %3d => Answer: %10.7f   Error: %10.7f\n",i,Val,Error);
             Val += Error*Step;
             Val = Math.abs(Val);
-            if (Math.abs(Error) < 0.00000005 || Double.isNaN(Val)) {break;}
+            if (Math.abs(Error) < 0.0000001 || Double.isNaN(Val)) {break;}
         }
         return Val;
     }
